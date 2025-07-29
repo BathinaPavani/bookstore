@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The BookStore</title>
+
+    <link rel="icon" href="Images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="checkout.js?"+new Date().getTime();></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="Images/logo.png" alt="Book Icon" class="logo-icon">
+                The BookStore
+            </div>
+            <div class="nav-buttons">
+                <a href="home.html"><button class="nav-btn">Home</button></a>
+                <a href="explore.html"><button class="nav-btn">Explore</button></a>
+                <a href="about.html"><button class="nav-btn">About</button></a>
+                <a href="contact.html"><button class="nav-btn">Contact</button></a>
+                <a href="review.html"><button class="nav-btn">review</button></a>
+                <button class="nav-btn cart-btn" id="cart-btn"><span class="material-icons cart-icon">
+                    shopping_cart
+                    </span></button>
+            </div>
+        </nav>
+        <div>
+            <div>
+                <h2>Billing Address</h2>
+                    <p>First Name: 
+                        <input type="text" id="firstName" required></p>
+                    <p>Last Name:
+                        <input type="text" id="lastName" required> </p>
+                    <p>Email Address:
+                        <input type="email" id="email"  required></p>
+                    <p>Address:
+                        <input type="text" id="address" required></p>
+                    <p >City:
+                        <input type="text" id="city" required></p>
+                    <p>State:
+                        <input type="text" id="state" required></p>
+                    <p>Zip Code:
+                        <input type="text" id="zipCode"  required></p> 
+            </div>
+            <div>
+                <h2>Shipping Method</h2>
+                <p><input type="radio" id="standardShipping"  value="standard" > Standard Shipping (3-5 business days):</p>
+                <p><input type="radio" id="expressShipping" value="express"> Express Shipping (2 business days):</p>
+                <p> Note : For Express Shipping extra $10 is added to billing </p>
+            </div>
+            <input type="button" id="orderButton" value="Place Order"></input>
+        </div>
+        <p id="resultPara"></p>
+        <footer>copyright &copy; Boutique For Everyone-2023</footer>
+    </body>
+</html>

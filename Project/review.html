@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The BookStore</title>
+
+    <link rel="icon" href="Images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="review.js"+new Date().getTime();></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="Images/logo.png" alt="Book Icon" class="logo-icon">
+                The BookStore
+            </div>
+            <div class="nav-buttons">
+                <a href="home.html"><button class="nav-btn">Home</button></a>
+                <a href="explore.html"><button class="nav-btn">Explore</button></a>
+                <a href="about.html"><button class="nav-btn">About</button></a>
+                <a href="contact.html"><button class="nav-btn">Contact</button></a>
+                <a href="checkout.html"><button class="nav-btn">Checkout</button></a>
+                <button class="nav-btn cart-btn" id="cart-btn"><span class="material-icons cart-icon">
+                    shopping_cart
+                    </span></button>
+            </div>
+        </nav>
+        <h2>Review Form</h2>
+        <form>
+            <p>Write a review:</p>
+            <textarea type="text" id ="reviewTextBox" name="textArea" rows="5" cols="50"></textarea>
+            <p>Select rating</p>
+            <p>Rating:</p>
+            <select id="rating" name="rating">
+                <option value="1">1 star</option>
+                <option value="2">2 star</option>
+                <option value="3">3 star</option>
+                <option value="4">4 star</option>
+                <option value="5">5 star</option>
+            </select>
+
+            <input type="button" id ="reviewButton" value="Submit">&nbsp;&nbsp;
+
+            <h3>Reviews</h3>
+            <input type="button"  id="listButton" value="Reviews">
+            <p id="reviewsList"></p>
+        </form>
+        <footer>copyright &copy; Boutique For Everyone-2023</footer>
+    </body>
+    
+</html>

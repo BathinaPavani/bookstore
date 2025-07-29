@@ -1,0 +1,25 @@
+{
+    "blackFridayOffers": [
+        {
+            "title": "Black Friday Bonanza",
+            "description": "Get up to 70% off on bestsellers and new releases. Limited time only!",
+            "discountPercentage": 70,
+            "validFrom": "2024-11-29",
+            "validTo": "2024-11-30"
+        },
+        {
+            "title": "Flash Sale",
+            "description": "Buy 2, Get 1 Free on all fiction books during the Black Friday weekend!",
+            "discountPercentage": 33,
+            "validFrom": "2024-11-29",
+            "validTo": "2024-11-30"
+        },
+        {
+            "title": "Early Bird Special",
+            "description": "Early shoppers get 60% off on selected categories. Don't miss out!",
+            "discountPercentage": 60,
+            "validFrom": "2024-11-29",
+            "validTo": "2024-11-29"
+        }
+    ]
+}
